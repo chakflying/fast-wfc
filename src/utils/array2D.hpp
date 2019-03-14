@@ -86,7 +86,7 @@ public:
    */
   Array2D<T> get_sub_array(unsigned y, unsigned x, unsigned sub_width,
                            unsigned sub_height) const noexcept {
-    Array2D<T> sub_array_2d = Array2D<T>(sub_width, sub_height);
+    Array2D<T> sub_array_2d = Array2D<T>(sub_height, sub_width);
     for (unsigned ki = 0; ki < sub_height; ki++) {
       for (unsigned kj = 0; kj < sub_width; kj++) {
         sub_array_2d.get(ki, kj) = get((y + ki) % height, (x + kj) % width);

@@ -1,5 +1,7 @@
 # The executable
 wfc
+main.*
+vc140.pdb
 
 # The results of the algorithm
 results/*
